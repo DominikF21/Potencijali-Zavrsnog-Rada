@@ -1,0 +1,33 @@
+C:\Users\Polaznik\Documents\GitHub\Potencijali-Zavrsnog-Rada\Zavrsni Trgovina\Zavrsni Trgovina\bin\Debug\net7.0\appsettings.Development.json
+C:\Users\Polaznik\Documents\GitHub\Potencijali-Zavrsnog-Rada\Zavrsni Trgovina\Zavrsni Trgovina\bin\Debug\net7.0\appsettings.json
+C:\Users\Polaznik\Documents\GitHub\Potencijali-Zavrsnog-Rada\Zavrsni Trgovina\Zavrsni Trgovina\bin\Debug\net7.0\Zavrsni Trgovina.exe
+C:\Users\Polaznik\Documents\GitHub\Potencijali-Zavrsnog-Rada\Zavrsni Trgovina\Zavrsni Trgovina\bin\Debug\net7.0\Zavrsni Trgovina.deps.json
+C:\Users\Polaznik\Documents\GitHub\Potencijali-Zavrsnog-Rada\Zavrsni Trgovina\Zavrsni Trgovina\bin\Debug\net7.0\Zavrsni Trgovina.runtimeconfig.json
+C:\Users\Polaznik\Documents\GitHub\Potencijali-Zavrsnog-Rada\Zavrsni Trgovina\Zavrsni Trgovina\bin\Debug\net7.0\Zavrsni Trgovina.dll
+C:\Users\Polaznik\Documents\GitHub\Potencijali-Zavrsnog-Rada\Zavrsni Trgovina\Zavrsni Trgovina\bin\Debug\net7.0\Zavrsni Trgovina.pdb
+C:\Users\Polaznik\Documents\GitHub\Potencijali-Zavrsnog-Rada\Zavrsni Trgovina\Zavrsni Trgovina\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\Polaznik\Documents\GitHub\Potencijali-Zavrsnog-Rada\Zavrsni Trgovina\Zavrsni Trgovina\bin\Debug\net7.0\Microsoft.OpenApi.dll
+C:\Users\Polaznik\Documents\GitHub\Potencijali-Zavrsnog-Rada\Zavrsni Trgovina\Zavrsni Trgovina\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Polaznik\Documents\GitHub\Potencijali-Zavrsnog-Rada\Zavrsni Trgovina\Zavrsni Trgovina\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Polaznik\Documents\GitHub\Potencijali-Zavrsnog-Rada\Zavrsni Trgovina\Zavrsni Trgovina\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Polaznik\Documents\GitHub\Potencijali-Zavrsnog-Rada\Zavrsni Trgovina\Zavrsni Trgovina\obj\Debug\net7.0\Zavrsni Trgovina.csproj.AssemblyReference.cache
+C:\Users\Polaznik\Documents\GitHub\Potencijali-Zavrsnog-Rada\Zavrsni Trgovina\Zavrsni Trgovina\obj\Debug\net7.0\Zavrsni Trgovina.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Polaznik\Documents\GitHub\Potencijali-Zavrsnog-Rada\Zavrsni Trgovina\Zavrsni Trgovina\obj\Debug\net7.0\Zavrsni Trgovina.AssemblyInfoInputs.cache
+C:\Users\Polaznik\Documents\GitHub\Potencijali-Zavrsnog-Rada\Zavrsni Trgovina\Zavrsni Trgovina\obj\Debug\net7.0\Zavrsni Trgovina.AssemblyInfo.cs
+C:\Users\Polaznik\Documents\GitHub\Potencijali-Zavrsnog-Rada\Zavrsni Trgovina\Zavrsni Trgovina\obj\Debug\net7.0\Zavrsni Trgovina.csproj.CoreCompileInputs.cache
+C:\Users\Polaznik\Documents\GitHub\Potencijali-Zavrsnog-Rada\Zavrsni Trgovina\Zavrsni Trgovina\obj\Debug\net7.0\Zavrsni Trgovina.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Polaznik\Documents\GitHub\Potencijali-Zavrsnog-Rada\Zavrsni Trgovina\Zavrsni Trgovina\obj\Debug\net7.0\Zavrsni Trgovina.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Polaznik\Documents\GitHub\Potencijali-Zavrsnog-Rada\Zavrsni Trgovina\Zavrsni Trgovina\obj\Debug\net7.0\staticwebassets\msbuild.Zavrsni Trgovina.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Polaznik\Documents\GitHub\Potencijali-Zavrsnog-Rada\Zavrsni Trgovina\Zavrsni Trgovina\obj\Debug\net7.0\staticwebassets\msbuild.build.Zavrsni Trgovina.props
+C:\Users\Polaznik\Documents\GitHub\Potencijali-Zavrsnog-Rada\Zavrsni Trgovina\Zavrsni Trgovina\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.Zavrsni Trgovina.props
+C:\Users\Polaznik\Documents\GitHub\Potencijali-Zavrsnog-Rada\Zavrsni Trgovina\Zavrsni Trgovina\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.Zavrsni Trgovina.props
+C:\Users\Polaznik\Documents\GitHub\Potencijali-Zavrsnog-Rada\Zavrsni Trgovina\Zavrsni Trgovina\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Users\Polaznik\Documents\GitHub\Potencijali-Zavrsnog-Rada\Zavrsni Trgovina\Zavrsni Trgovina\obj\Debug\net7.0\staticwebassets.build.json
+C:\Users\Polaznik\Documents\GitHub\Potencijali-Zavrsnog-Rada\Zavrsni Trgovina\Zavrsni Trgovina\obj\Debug\net7.0\staticwebassets.development.json
+C:\Users\Polaznik\Documents\GitHub\Potencijali-Zavrsnog-Rada\Zavrsni Trgovina\Zavrsni Trgovina\obj\Debug\net7.0\scopedcss\bundle\Zavrsni Trgovina.styles.css
+C:\Users\Polaznik\Documents\GitHub\Potencijali-Zavrsnog-Rada\Zavrsni Trgovina\Zavrsni Trgovina\obj\Debug\net7.0\Zavrsni Trgovina.csproj.CopyComplete
+C:\Users\Polaznik\Documents\GitHub\Potencijali-Zavrsnog-Rada\Zavrsni Trgovina\Zavrsni Trgovina\obj\Debug\net7.0\Zavrsni Trgovina.dll
+C:\Users\Polaznik\Documents\GitHub\Potencijali-Zavrsnog-Rada\Zavrsni Trgovina\Zavrsni Trgovina\obj\Debug\net7.0\refint\Zavrsni Trgovina.dll
+C:\Users\Polaznik\Documents\GitHub\Potencijali-Zavrsnog-Rada\Zavrsni Trgovina\Zavrsni Trgovina\obj\Debug\net7.0\Zavrsni Trgovina.pdb
+C:\Users\Polaznik\Documents\GitHub\Potencijali-Zavrsnog-Rada\Zavrsni Trgovina\Zavrsni Trgovina\obj\Debug\net7.0\Zavrsni Trgovina.genruntimeconfig.cache
+C:\Users\Polaznik\Documents\GitHub\Potencijali-Zavrsnog-Rada\Zavrsni Trgovina\Zavrsni Trgovina\obj\Debug\net7.0\ref\Zavrsni Trgovina.dll

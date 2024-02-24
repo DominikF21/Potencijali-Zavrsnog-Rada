@@ -1,0 +1,3 @@
+.vs
+SKladisteAppl/bin
+SKladisteAppl/obj
