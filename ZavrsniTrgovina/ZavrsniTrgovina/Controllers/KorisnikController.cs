@@ -44,7 +44,7 @@ namespace Zavrsni_Trgovina.Controllers
             try
             {
                 var korisnici = _context.Korisnici.ToList();
-                if (korisnici == null || Korisnik.Count == 0)
+                if (korisnici == null || korisnici.Count == 0)
                 {
                     return new EmptyResult();
                 }
@@ -187,7 +187,7 @@ namespace Zavrsni_Trgovina.Controllers
                     return StatusCode(StatusCodes.Status204NoContent, sifra);
                 }
 
-                _context.Smjerovi.Remove(korisnikIzBaze);
+                _context.Korisnici.Remove(korisnikIzBaze);
                 _context.SaveChanges();
 
                 return new JsonResult("{\"poruka\": \"Obrisano\"}"); // ovo nije baš najbolja praksa ali da znake kako i to može

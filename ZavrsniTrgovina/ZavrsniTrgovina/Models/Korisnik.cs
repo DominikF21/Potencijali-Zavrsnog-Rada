@@ -2,14 +2,17 @@
 
 namespace Zavrsni_Trgovina.Models
 {
-    public class Korisnici : Entitet
+    public class Korisnik : Entitet
     {
-        [Required(ErrorMessage = "Sifra obavezno")]
-        public int? Sifra { get; set; }
-
+        /// <summary>
+        ///Korisnicko ime  u bazi
+        /// </summary>
         [Required(ErrorMessage = "Korisnicko Ime obavezno")]
         public string? KorisnickoIme { get; set; }
 
+        /// <summary>
+        /// Lozinka u bazi
+        /// </summary>
         [Required(ErrorMessage = "Lozinka obavezno")]
         public string? Lozinka { get; set; }
 
