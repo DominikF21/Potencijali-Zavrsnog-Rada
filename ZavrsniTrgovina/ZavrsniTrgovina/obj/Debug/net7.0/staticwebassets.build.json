@@ -1,11 +1,37 @@
 {
   "Version": 1,
-  "Hash": "r/zpc7o8E49fskiltTWIppwgkYPN2pICs1V8LtoTaUY=",
-  "Source": "Zavrsni Trgovina",
-  "BasePath": "_content/Zavrsni Trgovina",
+  "Hash": "Lfq8Kh2vSsMSVT4m/frfOd+3Upd1kqZzcUmPCGSJimw=",
+  "Source": "ZavrsniTrgovina",
+  "BasePath": "_content/ZavrsniTrgovina",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "ZavrsniTrgovina\\wwwroot",
+      "Source": "ZavrsniTrgovina",
+      "ContentRoot": "C:\\Users\\Polaznik\\Documents\\GitHub\\Potencijali-Zavrsnog-Rada\\ZavrsniTrgovina\\ZavrsniTrgovina\\wwwroot\\",
+      "BasePath": "_content/ZavrsniTrgovina",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Polaznik\\Documents\\GitHub\\Potencijali-Zavrsnog-Rada\\ZavrsniTrgovina\\ZavrsniTrgovina\\wwwroot\\htmlpage.html",
+      "SourceId": "ZavrsniTrgovina",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Polaznik\\Documents\\GitHub\\Potencijali-Zavrsnog-Rada\\ZavrsniTrgovina\\ZavrsniTrgovina\\wwwroot\\",
+      "BasePath": "_content/ZavrsniTrgovina",
+      "RelativePath": "htmlpage.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\htmlpage.html"
+    }
+  ]
 }

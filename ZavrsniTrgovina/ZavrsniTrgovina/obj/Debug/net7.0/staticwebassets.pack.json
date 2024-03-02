@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Polaznik\\Documents\\GitHub\\Potencijali-Zavrsnog-Rada\\ZavrsniTrgovina\\ZavrsniTrgovina\\wwwroot\\htmlpage.html",
+      "PackagePath": "staticwebassets\\htmlpage.html"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.ZavrsniTrgovina.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.ZavrsniTrgovina.props",
+      "PackagePath": "build\\ZavrsniTrgovina.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.ZavrsniTrgovina.props",
+      "PackagePath": "buildMultiTargeting\\ZavrsniTrgovina.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.ZavrsniTrgovina.props",
+      "PackagePath": "buildTransitive\\ZavrsniTrgovina.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

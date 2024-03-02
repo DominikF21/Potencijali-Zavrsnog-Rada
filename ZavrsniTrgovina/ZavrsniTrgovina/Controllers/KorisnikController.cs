@@ -4,6 +4,8 @@ using Zavrsni_Trgovina.Models;
 
 namespace Zavrsni_Trgovina.Controllers
 {
+    [ApiController]
+    [Route("api/v1/[controller]")]
     public class KorisnikController : ControllerBase
     {
         /// <summary>
@@ -11,7 +13,7 @@ namespace Zavrsni_Trgovina.Controllers
         /// </summary>
         private readonly TrgovinaContext _context;
         /// <summary>
-        /// Konstruktor klase koja prima Edunova kontext
+        /// Konstruktor klase koja prima Trgovina kontext
         /// pomoću DI principa
         /// </summary>
         /// <param name="context"></param>
@@ -21,12 +23,12 @@ namespace Zavrsni_Trgovina.Controllers
         }
 
         /// <summary>
-        /// Dohvaća sve smjerove iz baze
+        /// Dohvaća sve korisnike iz baze
         /// </summary>
         /// <remarks>
         /// Primjer upita
         /// 
-        ///    GET api/v1/Smjer
+        ///    GET api/v1/korisnik
         ///    
         /// </remarks>
         /// <returns>Korisnici u bazi</returns>
@@ -61,10 +63,10 @@ namespace Zavrsni_Trgovina.Controllers
         /// Dodaje novog korisnika u bazu
         /// </summary>
         /// <remarks>
-        ///     POST api/v1/Smjer
+        ///     POST api/v1/korisnik
         ///     {naziv: "Primjer naziva"}
         /// </remarks>
-        /// <param name="korisnik">korisnika za unijeti u JSON formatu</param>
+        /// <param name="korisnici">korisnika za unijeti u JSON formatu</param>
         /// <response code="201">Kreirano</response>
         /// <response code="400">Zahtjev nije valjan (BadRequest)</response> 
         /// <response code="503">Baza nedostupna iz razno raznih razloga</response> 
@@ -108,7 +110,7 @@ namespace Zavrsni_Trgovina.Controllers
         ///
         /// </remarks>
         /// <param name="sifra">Šifra smjera koji se mijenja</param>  
-        /// <param name="smjer">Smjer za unijeti u JSON formatu</param>  
+        /// <param name="korisnik">Smjer za unijeti u JSON formatu</param>  
         /// <returns>Svi poslani podaci od smjera koji su spremljeni u bazi</returns>
         /// <response code="200">Sve je u redu</response>
         /// <response code="204">Nema u bazi smjera kojeg želimo promijeniti</response>
