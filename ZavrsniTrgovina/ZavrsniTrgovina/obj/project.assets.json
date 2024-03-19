@@ -3629,19 +3629,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Polaznik\\.nuget\\packages\\": {}
+    "C:\\Users\\Gamers\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Polaznik\\Documents\\GitHub\\Potencijali-Zavrsnog-Rada\\ZavrsniTrgovina\\ZavrsniTrgovina\\ZavrsniTrgovina.csproj",
+      "projectUniqueName": "C:\\Users\\Gamers\\Documents\\GitHub\\Potencijali-Zavrsnog-Rada\\ZavrsniTrgovina\\ZavrsniTrgovina\\ZavrsniTrgovina.csproj",
       "projectName": "ZavrsniTrgovina",
-      "projectPath": "C:\\Users\\Polaznik\\Documents\\GitHub\\Potencijali-Zavrsnog-Rada\\ZavrsniTrgovina\\ZavrsniTrgovina\\ZavrsniTrgovina.csproj",
-      "packagesPath": "C:\\Users\\Polaznik\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Polaznik\\Documents\\GitHub\\Potencijali-Zavrsnog-Rada\\ZavrsniTrgovina\\ZavrsniTrgovina\\obj\\",
+      "projectPath": "C:\\Users\\Gamers\\Documents\\GitHub\\Potencijali-Zavrsnog-Rada\\ZavrsniTrgovina\\ZavrsniTrgovina\\ZavrsniTrgovina.csproj",
+      "packagesPath": "C:\\Users\\Gamers\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Gamers\\Documents\\GitHub\\Potencijali-Zavrsnog-Rada\\ZavrsniTrgovina\\ZavrsniTrgovina\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Polaznik\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Gamers\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3703,7 +3703,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }

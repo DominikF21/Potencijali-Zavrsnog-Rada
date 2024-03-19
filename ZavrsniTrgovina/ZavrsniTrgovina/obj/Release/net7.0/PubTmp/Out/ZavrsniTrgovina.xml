@@ -1,0 +1,118 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ZavrsniTrgovina</name>
+    </assembly>
+    <members>
+        <member name="F:Zavrsni_Trgovina.Controllers.KorisnikController._context">
+            <summary>
+            Kontest za rad s bazom koji će biti postavljen s pomoću Dependecy Injection-om
+            </summary>
+        </member>
+        <member name="M:Zavrsni_Trgovina.Controllers.KorisnikController.#ctor(Zavrsni_Trgovina.Data.TrgovinaContext)">
+            <summary>
+            Konstruktor klase koja prima Trgovina kontext
+            pomoću DI principa
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:Zavrsni_Trgovina.Controllers.KorisnikController.Get">
+            <summary>
+            Dohvaća sve korisnike iz baze
+            </summary>
+            <remarks>
+            Primjer upita
+            
+               GET api/v1/korisnik
+               
+            </remarks>
+            <returns>Korisnici u bazi</returns>
+            <response code="200">Sve OK, ako nema podataka content-length: 0 </response>
+            <response code="400">Zahtjev nije valjan</response>
+            <response code="503">Baza na koju se spajam nije dostupna</response>
+        </member>
+        <member name="M:Zavrsni_Trgovina.Controllers.KorisnikController.Post(Zavrsni_Trgovina.Models.Korisnik)">
+            <summary>
+            Dodaje novog korisnika u bazu
+            </summary>
+            <remarks>
+                POST api/v1/korisnik
+                {naziv: "Primjer naziva"}
+            </remarks>
+            <param name="korisnici">korisnika za unijeti u JSON formatu</param>
+            <response code="201">Kreirano</response>
+            <response code="400">Zahtjev nije valjan (BadRequest)</response> 
+            <response code="503">Baza nedostupna iz razno raznih razloga</response> 
+            <returns>Korisnik s šifrom koju je dala baza</returns>
+        </member>
+        <member name="M:Zavrsni_Trgovina.Controllers.KorisnikController.Put(System.Int32,Zavrsni_Trgovina.Models.Korisnik)">
+             <summary>
+             Mijenja podatke postojećih Korisnika u bazi
+             </summary>
+             <remarks>
+             Primjer upita:
+            
+                PUT api/v1/smjer/1
+            
+             {
+              "sifra": 0,
+              "naziv": "Novi naziv",
+              "trajanje": 120,
+              "cijena": 890.22,
+              "upisnina": 0,
+              "verificiran": true
+             }
+            
+             </remarks>
+             <param name="sifra">Šifra smjera koji se mijenja</param>  
+             <param name="korisnik">Smjer za unijeti u JSON formatu</param>  
+             <returns>Svi poslani podaci od smjera koji su spremljeni u bazi</returns>
+             <response code="200">Sve je u redu</response>
+             <response code="204">Nema u bazi smjera kojeg želimo promijeniti</response>
+             <response code="415">Nismo poslali JSON</response> 
+             <response code="503">Baza nedostupna</response> 
+        </member>
+        <member name="M:Zavrsni_Trgovina.Controllers.KorisnikController.Delete(System.Int32)">
+             <summary>
+             Briše korisnika iz baze
+             </summary>
+             <remarks>
+             Primjer upita:
+            
+                DELETE api/v1/korisnik/1
+                
+             </remarks>
+             <param name="sifra">Šifra korisnika koji se briše</param>  
+             <returns>Odgovor da li je obrisano ili ne</returns>
+             <response code="200">Sve je u redu, obrisano je u bazi</response>
+             <response code="204">Nema u bazi smjera kojeg želimo obrisati</response>
+             <response code="503">Problem s bazom</response> 
+        </member>
+        <member name="T:Zavrsni_Trgovina.Data.TrgovinaContext">
+            <summary>
+            Ovo mi je datoteka gdje ću navoditi datasetove i načine spajanja u bazi
+            </summary>
+        </member>
+        <member name="M:Zavrsni_Trgovina.Data.TrgovinaContext.#ctor(Microsoft.EntityFrameworkCore.DbContextOptions{Zavrsni_Trgovina.Data.TrgovinaContext})">
+            <summary>
+            Kostruktor
+            </summary>
+            <param name="options"></param>
+        </member>
+        <member name="P:Zavrsni_Trgovina.Data.TrgovinaContext.Korisnici">
+            <summary>
+            Korisnici u bazi
+            </summary>
+        </member>
+        <member name="P:Zavrsni_Trgovina.Models.Korisnik.KorisnickoIme">
+             <summary>
+            Korisnicko ime  u bazi
+             </summary>
+        </member>
+        <member name="P:Zavrsni_Trgovina.Models.Korisnik.Lozinka">
+            <summary>
+            Lozinka u bazi
+            </summary>
+        </member>
+    </members>
+</doc>
