@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "g9H4ngLM4Xs8m43Tr4p7hgGoAQzWu3hVXOFXg99yC5M=",
+  "Hash": "6GkseAc6aOYaVwIhUK0ITwwuQf9Qj0sGU/epmPU3axM=",
   "Source": "ZavrsniTrgovina",
   "BasePath": "_content/ZavrsniTrgovina",
   "Mode": "Default",
@@ -10,19 +10,19 @@
     {
       "Name": "ZavrsniTrgovina\\wwwroot",
       "Source": "ZavrsniTrgovina",
-      "ContentRoot": "C:\\Users\\Gamers\\Documents\\GitHub\\Potencijali-Zavrsnog-Rada\\ZavrsniTrgovina\\ZavrsniTrgovina\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Polaznik\\Documents\\GitHub\\Potencijali-Zavrsnog-Rada\\ZavrsniTrgovina\\ZavrsniTrgovina\\wwwroot\\",
       "BasePath": "_content/ZavrsniTrgovina",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Gamers\\Documents\\GitHub\\Potencijali-Zavrsnog-Rada\\ZavrsniTrgovina\\ZavrsniTrgovina\\wwwroot\\htmlpage.html",
+      "Identity": "C:\\Users\\Polaznik\\Documents\\GitHub\\Potencijali-Zavrsnog-Rada\\ZavrsniTrgovina\\ZavrsniTrgovina\\wwwroot\\index.html",
       "SourceId": "ZavrsniTrgovina",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Gamers\\Documents\\GitHub\\Potencijali-Zavrsnog-Rada\\ZavrsniTrgovina\\ZavrsniTrgovina\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Polaznik\\Documents\\GitHub\\Potencijali-Zavrsnog-Rada\\ZavrsniTrgovina\\ZavrsniTrgovina\\wwwroot\\",
       "BasePath": "_content/ZavrsniTrgovina",
-      "RelativePath": "htmlpage.html",
+      "RelativePath": "index.html",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -31,7 +31,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\htmlpage.html"
+      "OriginalItemSpec": "wwwroot\\index.html"
     }
   ]
 }
