@@ -1,6 +1,8 @@
 export const RoutesNames = {
     HOME: '/',
-    SMJEROVI_PREGLED: '/smjerovi'
+    KORISNICI_PREGLED: '/korisnici',
+    KORISNICI_NOVI: '/korisnici/dodaj',
+    KORISNICI_PROMJENI: '/korisnici/promjeni'
 };
 
 export const App = {
