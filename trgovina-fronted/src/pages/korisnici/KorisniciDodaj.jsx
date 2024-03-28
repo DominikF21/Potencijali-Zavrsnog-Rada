@@ -8,7 +8,7 @@ export default function KorisniciDodaj(){
 
 
     async function dodajKorisnik(korisnik){
-        const odgovor = await SKorisnikService.dodajKorisnik(korisnik);
+        const odgovor = await KorisnikService.dodajKorisnik(korisnik);
         if(odgovor.ok){
           navigate(RoutesNames.KORISNICI_PREGLED);
         }else{
