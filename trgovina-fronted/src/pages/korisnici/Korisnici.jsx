@@ -5,11 +5,14 @@ import { NumericFormat } from "react-number-format";
 import { GrValidate } from "react-icons/gr";
 import { IoIosAdd } from "react-icons/io";
 import { FaEdit, FaTrash } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { RoutesNames } from "../../constants";
+
 
 export default function Korisnici(){
     const [korisnici,setKorisnici] = useState();
+    const navigate = useNavigate();
+
     async function dohvatiKorisnike(){
         await KorisnikService.getKorisnici()
         .then((res)=>{
@@ -24,11 +27,13 @@ export default function Korisnici(){
     useEffect(()=>{
         dohvatiKorisnike();
     },[]);
+
     function verificiran(korisnik){
         if (korisnik.verificiran==null) return 'gray';
         if(korisnik.verificiran) return 'green';
         return 'red';
     }
+    
     function verificiranTitle(korisnik){
         if (korisnik.verificiran==null) return 'Nije definirano';
         if(korisnik.verificiran) return 'Verificiran';
@@ -47,8 +52,9 @@ export default function Korisnici(){
 
 
     return (
+
         <Container>
-            <Link to={RoutesNames.KORISNICI_NOVI} className="btn btn-success gumb">
+            <Link to={RoutesNames.korisnici_NOVI} className="btn btn-success gumb">
                 <IoIosAdd
                 size={25}
                 /> Dodaj
@@ -56,12 +62,12 @@ export default function Korisnici(){
             <Table striped bordered hover responsive>
                 <thead>
                     <tr>
-                        <th>Naziv</th>
-                        <th>Trajanje</th>
-                        <th>Cijena</th>
-                        <th>Upisnina</th>
-                        <th>Verificiran</th>
-                        <th>Akcija</th>
+                        <th>Ime</th>
+                        <th>-----</th>
+                        <th>-----</th>
+                        <th>-----</th>
+                        <th>-----</th>
+                        <th>-----</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -107,12 +113,14 @@ export default function Korisnici(){
                             />
                             </td>
                             <td className="sredina">
-                                <Link to={RoutesNames.KORISNICI_PROMJENI}>
+                                <Button 
+                                variant="primary"
+                                onClick={()=>{navigate(`/korisnici/${korisnik.sifra}`)}}>
                                     <FaEdit 
                                     size={25}
                                     />
-                                </Link>
-
+                                </Button>
+                                
                                     &nbsp;&nbsp;&nbsp;
                                 <Button
                                     variant="danger"
@@ -129,5 +137,7 @@ export default function Korisnici(){
                 </tbody>
             </Table>
         </Container>
+
     );
+
 }

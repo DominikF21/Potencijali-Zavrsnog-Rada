@@ -4,9 +4,14 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { useNavigate } from 'react-router-dom';
 import { RoutesNames } from '../constants';
+
 import './NavBar.css';
+
+
 function NavBar() {
+  
     const navigate = useNavigate();
+
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
@@ -22,19 +27,19 @@ function NavBar() {
             
             <NavDropdown title="Programi" id="basic-nav-dropdown">
             <NavDropdown.Item 
-                onClick={()=>navigate(RoutesNames.SMJEROVI_PREGLED)}
+                onClick={()=>navigate(RoutesNames.KORISNICI_PREGLED)}
               >
-                Smjerovi
+                Korisnici
               </NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
-                Predavači
+                Djelatnice
               </NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">
-                Polaznici
+                Stavke
               </NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">
-                Grupe
+                Proizvodi
               </NavDropdown.Item>
             </NavDropdown>
 

@@ -1,7 +1,7 @@
 import { Button, Col, Container, Form, Row } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
-import { RoutesNames } from "../../constants";
 import KorisnikService from "../../services/KorisnikService";
+import { RoutesNames } from "../../constants";
 
 export default function KorisniciDodaj(){
     const navigate = useNavigate();
@@ -44,7 +44,7 @@ export default function KorisniciDodaj(){
            <Form onSubmit={handleSubmit}>
 
                 <Form.Group controlId="naziv">
-                    <Form.Label>Naziv</Form.Label>
+                    <Form.Label>KorisnickoIme</Form.Label>
                     <Form.Control 
                         type="text"
                         name="naziv"
@@ -52,7 +52,7 @@ export default function KorisniciDodaj(){
                 </Form.Group>
 
                 <Form.Group controlId="trajanje">
-                    <Form.Label>Trajanje</Form.Label>
+                    <Form.Label>Lozinka</Form.Label>
                     <Form.Control 
                         type="text"
                         name="trajanje"
@@ -60,7 +60,7 @@ export default function KorisniciDodaj(){
                 </Form.Group>
 
                 <Form.Group controlId="cijena">
-                    <Form.Label>Cijena</Form.Label>
+                    <Form.Label>-----</Form.Label>
                     <Form.Control 
                         type="text"
                         name="cijena"
@@ -68,7 +68,7 @@ export default function KorisniciDodaj(){
                 </Form.Group>
 
                 <Form.Group controlId="upisnina">
-                    <Form.Label>Upisnina</Form.Label>
+                    <Form.Label>-----</Form.Label>
                     <Form.Control 
                         type="text"
                         name="upisnina"
@@ -93,7 +93,7 @@ export default function KorisniciDodaj(){
                             variant="primary"
                             type="submit"
                         >
-                            Dodaj korisnik
+                            Dodaj korisnika
                         </Button>
                     </Col>
                 </Row>
@@ -103,4 +103,5 @@ export default function KorisniciDodaj(){
         </Container>
 
     );
+
 }
