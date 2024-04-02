@@ -7,6 +7,7 @@ import { IoIosAdd } from "react-icons/io";
 import { FaEdit, FaTrash } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 import { RoutesNames } from "../../constants";
+import { dohvatiPorukeAlert } from "../../services/httpService";
 
 
 export default function Korisnici(){
@@ -14,13 +15,12 @@ export default function Korisnici(){
     const navigate = useNavigate();
 
     async function dohvatiKorisnike(){
-        await KorisnikService.getKorisnici()
-        .then((res)=>{
-            setKorisnici(res.data);
-        })
-        .catch((e)=>{
-            alert(e);
-        });
+        const odgovor = await KorisnikService.getKorisnici();
+        if(!odgovor.ok){
+            alert(dohvatiPorukeAlert(odgovor.podaci));
+            return;
+        }
+        setKorisnici(odgovor.podaci);
     }
      // Ovo se poziva dvaput u dev ali jednom u produkciji
     // https://stackoverflow.com/questions/60618844/react-hooks-useeffect-is-called-twice-even-if-an-empty-array-is-used-as-an-ar
@@ -54,7 +54,7 @@ export default function Korisnici(){
     return (
 
         <Container>
-            <Link to={RoutesNames.korisnici_NOVI} className="btn btn-success gumb">
+            <Link to={RoutesNames.KORISNICI_NOVI} className="btn btn-success gumb">
                 <IoIosAdd
                 size={25}
                 /> Dodaj
@@ -63,7 +63,7 @@ export default function Korisnici(){
                 <thead>
                     <tr>
                         <th>Ime</th>
-                        <th>-----</th>
+                        <th>Prezime</th>
                         <th>-----</th>
                         <th>-----</th>
                         <th>-----</th>
