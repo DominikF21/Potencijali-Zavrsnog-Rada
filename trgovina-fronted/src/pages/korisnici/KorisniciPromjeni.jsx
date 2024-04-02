@@ -40,11 +40,11 @@ export default function KorisniciPromjeni(){
 
         const korisnik = 
         {
-            naziv: podaci.get('naziv'),
-            trajanje: parseInt(podaci.get('trajanje')),
-            cijena: parseFloat(podaci.get('cijena')),
-            upisnina: parseFloat(podaci.get('upisnina')),
-            verificiran: podaci.get('verificiran')=='on' ? true: false
+            // naziv: podaci.get('naziv'),
+            // trajanje: parseInt(podaci.get('trajanje')),
+            // cijena: parseFloat(podaci.get('cijena')),
+            // upisnina: parseFloat(podaci.get('upisnina')),
+            // verificiran: podaci.get('verificiran')=='on' ? true: false
           };
 
           //console.log(JSON.stringify(korisnik));
