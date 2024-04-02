@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Lfq8Kh2vSsMSVT4m/frfOd+3Upd1kqZzcUmPCGSJimw=",
+  "Hash": "6GkseAc6aOYaVwIhUK0ITwwuQf9Qj0sGU/epmPU3axM=",
   "Source": "ZavrsniTrgovina",
   "BasePath": "_content/ZavrsniTrgovina",
   "Mode": "Default",
@@ -17,12 +17,12 @@
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Polaznik\\Documents\\GitHub\\Potencijali-Zavrsnog-Rada\\ZavrsniTrgovina\\ZavrsniTrgovina\\wwwroot\\htmlpage.html",
+      "Identity": "C:\\Users\\Polaznik\\Documents\\GitHub\\Potencijali-Zavrsnog-Rada\\ZavrsniTrgovina\\ZavrsniTrgovina\\wwwroot\\index.html",
       "SourceId": "ZavrsniTrgovina",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Polaznik\\Documents\\GitHub\\Potencijali-Zavrsnog-Rada\\ZavrsniTrgovina\\ZavrsniTrgovina\\wwwroot\\",
       "BasePath": "_content/ZavrsniTrgovina",
-      "RelativePath": "htmlpage.html",
+      "RelativePath": "index.html",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -31,7 +31,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\htmlpage.html"
+      "OriginalItemSpec": "wwwroot\\index.html"
     }
   ]
 }

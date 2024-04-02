@@ -21,5 +21,7 @@ namespace Zavrsni_Trgovina.Data
         /// Korisnici u bazi
         /// </summary>
         public DbSet<Korisnik> Korisnici { get; set; }
+
+        public DbSet<Proizvod> Proizvodi { get; set; }
     }
 }

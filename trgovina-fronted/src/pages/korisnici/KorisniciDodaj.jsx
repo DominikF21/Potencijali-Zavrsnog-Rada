@@ -24,8 +24,8 @@ export default function KorisniciDodaj(){
 
         const korisnik = 
         {
-            naziv: podaci.get('naziv'),
-            trajanje: parseInt(podaci.get('trajanje')),
+            naziv: podaci.get('korisnickoIme'),
+            trajanje: parseInt(podaci.get('lozinka')),
             cijena: parseFloat(podaci.get('cijena')),
             upisnina: parseFloat(podaci.get('upisnina')),
             verificiran: podaci.get('verificiran')=='on' ? true: false
@@ -43,7 +43,7 @@ export default function KorisniciDodaj(){
 
            <Form onSubmit={handleSubmit}>
 
-                <Form.Group controlId="naziv">
+                <Form.Group controlId="KorisnickoIme">
                     <Form.Label>KorisnickoIme</Form.Label>
                     <Form.Control 
                         type="text"
@@ -51,15 +51,15 @@ export default function KorisniciDodaj(){
                     />
                 </Form.Group>
 
-                <Form.Group controlId="trajanje">
+                <Form.Group controlId="lozinka">
                     <Form.Label>Lozinka</Form.Label>
                     <Form.Control 
                         type="text"
-                        name="trajanje"
+                        name="lozinka"
                     />
                 </Form.Group>
 
-                <Form.Group controlId="cijena">
+                <Form.Group controlId="-----">
                     <Form.Label>-----</Form.Label>
                     <Form.Control 
                         type="text"
@@ -67,7 +67,7 @@ export default function KorisniciDodaj(){
                     />
                 </Form.Group>
 
-                <Form.Group controlId="upisnina">
+                <Form.Group controlId="-----">
                     <Form.Label>-----</Form.Label>
                     <Form.Control 
                         type="text"

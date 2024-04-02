@@ -26,7 +26,8 @@ async function dodajKorisnik(korisnik){
         return {ok: true, poruka: 'Uspješno dodano'}
     })
     .catch((e)=>{
-        return {ok: false, poruka: e.response.data.errors.Naziv[0]}
+        console.log(e.response.data.errors);
+        return {ok: false, poruka: 'Greška'}
     });
     return odgovor;
 }
