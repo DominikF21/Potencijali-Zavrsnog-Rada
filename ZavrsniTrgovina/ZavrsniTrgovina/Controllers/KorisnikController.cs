@@ -59,6 +59,31 @@ namespace Zavrsni_Trgovina.Controllers
             }
         }
 
+        [HttpGet]
+        [Route("{sifra:int}")]
+        public IActionResult GetBySifra(int sifra)
+        {
+            // kontrola ukoliko upit nije valjan
+            if (!ModelState.IsValid || sifra <= 0)
+            {
+                return BadRequest(ModelState);
+            }
+            try
+            {
+                var p = _context.Korisnici.Find(sifra);
+                if (p == null)
+                {
+                    return new EmptyResult();
+                }
+                return new JsonResult(p);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status503ServiceUnavailable,
+                    ex.Message);
+            }
+        }
+
         /// <summary>
         /// Dodaje novog korisnika u bazu
         /// </summary>
