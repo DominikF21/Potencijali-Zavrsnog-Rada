@@ -62,56 +62,16 @@ export default function Korisnici(){
             <Table striped bordered hover responsive>
                 <thead>
                     <tr>
-                        <th>Ime</th>
-                        <th>Prezime</th>
-                        <th>-----</th>
-                        <th>-----</th>
-                        <th>-----</th>
-                        <th>-----</th>
+                        <th>korisnickoIme</th>
+                        <th>Uredi</th>
                     </tr>
                 </thead>
                 <tbody>
                     {korisnici && korisnici.map((korisnik,index)=>(
                         <tr key={index}>
-                            <td>{korisnik.naziv}</td>
-                            <td className="desno">{korisnik.trajanje}</td>
-                            <td className={korisnik.cijena==null ? 'sredina' : 'desno'}>
-                                {korisnik.cijena==null 
-                                ? 'Nije definirano'
-                                :
-                                    <NumericFormat 
-                                    value={korisnik.cijena}
-                                    displayType={'text'}
-                                    thousandSeparator='.'
-                                    decimalSeparator=','
-                                    prefix={'€'}
-                                    decimalScale={2}
-                                    fixedDecimalScale
-                                    />
-                                }
-                            </td>
-                            <td className={korisnik.upisnina==null ? 'sredina' : 'desno'}>
-                                {korisnik.upisnina==null 
-                                ? 'Nije definirano'
-                                :
-                                    <NumericFormat 
-                                    value={korisnik.upisnina}
-                                    displayType={'text'}
-                                    thousandSeparator='.'
-                                    decimalSeparator=','
-                                    prefix={'€'}
-                                    decimalScale={2}
-                                    fixedDecimalScale
-                                    />
-                                }
-                            </td>
-                            <td className="sredina">
-                            <GrValidate 
-                            size={30} 
-                            color={verificiran(korisnik)}
-                            title={verificiranTitle(korisnik)}
-                            />
-                            </td>
+                            <td>{korisnik.korisnickoIme}</td>
+                           
+                           
                             <td className="sredina">
                                 <Button 
                                 variant="primary"

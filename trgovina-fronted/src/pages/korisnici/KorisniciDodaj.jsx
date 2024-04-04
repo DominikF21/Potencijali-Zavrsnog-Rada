@@ -2,8 +2,9 @@ import { Button, Col, Container, Form, Row } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
 import KorisnikService from "../../services/KorisnikService";
 import { RoutesNames } from "../../constants";
+import { dohvatiPorukeAlert } from "../../services/httpService";
 
-export default function KorisniciDodaj(){
+export default function dodajKorisnik(){
     const navigate = useNavigate();
 
 
@@ -11,10 +12,11 @@ export default function KorisniciDodaj(){
         const odgovor = await KorisnikService.dodajKorisnik(korisnik);
         if(odgovor.ok){
           navigate(RoutesNames.KORISNICI_PREGLED);
-        }else{
-          console.log(odgovor);
-          alert(odgovor.poruka);
+          return
         }
+
+        alert(dohvatiPorukeAlert(odgovor.podaci));
+        
     }
 
     function handleSubmit(e){
@@ -25,9 +27,7 @@ export default function KorisniciDodaj(){
         const korisnik = 
         {
             naziv: podaci.get('korisnickoIme'),
-            trajanje: parseInt(podaci.get('lozinka')),
-            cijena: parseFloat(podaci.get('cijena')),
-            upisnina: parseFloat(podaci.get('upisnina')),
+            lozinka: parseInt(podaci.get('lozinka')),
             verificiran: podaci.get('verificiran')=='on' ? true: false
           };
 
@@ -46,7 +46,7 @@ export default function KorisniciDodaj(){
                 <Form.Group controlId="KorisnickoIme">
                     <Form.Label>KorisnickoIme</Form.Label>
                     <Form.Control 
-                        type="text"
+                        type="text and number"
                         name="naziv"
                     />
                 </Form.Group>
@@ -54,24 +54,8 @@ export default function KorisniciDodaj(){
                 <Form.Group controlId="lozinka">
                     <Form.Label>Lozinka</Form.Label>
                     <Form.Control 
-                        type="text"
+                        type="text and number"
                         name="lozinka"
-                    />
-                </Form.Group>
-
-                <Form.Group controlId="-----">
-                    <Form.Label>-----</Form.Label>
-                    <Form.Control 
-                        type="text"
-                        name="cijena"
-                    />
-                </Form.Group>
-
-                <Form.Group controlId="-----">
-                    <Form.Label>-----</Form.Label>
-                    <Form.Control 
-                        type="text"
-                        name="upisnina"
                     />
                 </Form.Group>
 
