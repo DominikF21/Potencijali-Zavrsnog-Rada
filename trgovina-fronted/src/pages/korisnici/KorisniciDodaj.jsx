@@ -22,16 +22,15 @@ export default function dodajKorisnik(){
     function handleSubmit(e){
         e.preventDefault();
         const podaci = new FormData(e.target);
-        //console.log(podaci.get('naziv'));
+        // console.log(podaci.get('naziv'));
 
         const korisnik = 
         {
-            naziv: podaci.get('korisnickoIme'),
+            korisnickoIme: podaci.get('korisnickoIme'),
             lozinka: parseInt(podaci.get('lozinka')),
-            verificiran: podaci.get('verificiran')=='on' ? true: false
           };
 
-          //console.log(JSON.stringify(korisnik));
+        //   console.log(JSON.stringify(korisnik));
           dodajKorisnik(korisnik);
 
 
@@ -59,12 +58,6 @@ export default function dodajKorisnik(){
                     />
                 </Form.Group>
 
-                <Form.Group controlId="verificiran">
-                    <Form.Check 
-                        label="Verificiran"
-                        name="verificiran"
-                    />
-                </Form.Group>
 
                 <Row className="akcije">
                     <Col>

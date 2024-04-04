@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { Button, Container, Table } from "react-bootstrap";
 import KorisnikService from "../../services/KorisnikService";
-import { NumericFormat } from "react-number-format";
-import { GrValidate } from "react-icons/gr";
+// import { NumericFormat } from "react-number-format";
+// import { GrValidate } from "react-icons/gr";
 import { IoIosAdd } from "react-icons/io";
 import { FaEdit, FaTrash } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
@@ -22,33 +22,21 @@ export default function Korisnici(){
         }
         setKorisnici(odgovor.podaci);
     }
+
+    async function obrisiKorisnik(sifra){
+        const odgovor = await KorisnikService.obrisiKorisnik(sifra);
+        alert(dohvatiPorukeAlert(odgovor.podaci));
+        if (odgovor.ok){
+            dohvatiKorisnike();
+        }
+    }
+
+
      // Ovo se poziva dvaput u dev ali jednom u produkciji
     // https://stackoverflow.com/questions/60618844/react-hooks-useeffect-is-called-twice-even-if-an-empty-array-is-used-as-an-ar
     useEffect(()=>{
         dohvatiKorisnike();
     },[]);
-
-    function verificiran(korisnik){
-        if (korisnik.verificiran==null) return 'gray';
-        if(korisnik.verificiran) return 'green';
-        return 'red';
-    }
-    
-    function verificiranTitle(korisnik){
-        if (korisnik.verificiran==null) return 'Nije definirano';
-        if(korisnik.verificiran) return 'Verificiran';
-        return 'NIJE verificiran';
-    }
-
-    async function obrisiKorisnika(sifra){
-        const odgovor = await KorisnikService.obrisiKorisnika(sifra);
-        if (odgovor.ok){
-            alert(odgovor.poruka.data.poruka);
-            dohvatiKorisnike();
-        }
-
-    }
-
 
 
     return (
@@ -84,7 +72,7 @@ export default function Korisnici(){
                                     &nbsp;&nbsp;&nbsp;
                                 <Button
                                     variant="danger"
-                                    onClick={()=>obrisiKorisnika(korisnik.sifra)}
+                                    onClick={()=>obrisiKorisnik(korisnik.sifra)}
                                 >
                                     <FaTrash  
                                     size={25}

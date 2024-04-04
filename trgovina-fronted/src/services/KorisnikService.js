@@ -1,4 +1,3 @@
-import { App } from "../constants"
 import  { httpService, obradiGresku, obradiUspjeh } from "./httpService";
 
 async function getKorisnici(){
