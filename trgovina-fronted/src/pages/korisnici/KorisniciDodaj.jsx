@@ -27,7 +27,7 @@ export default function dodajKorisnik(){
         const korisnik = 
         {
             korisnickoIme: podaci.get('korisnickoIme'),
-            lozinka: parseInt(podaci.get('lozinka')),
+            lozinka: podaci.get('lozinka'),
           };
 
         //   console.log(JSON.stringify(korisnik));
@@ -46,14 +46,14 @@ export default function dodajKorisnik(){
                     <Form.Label>Korisnicko Ime</Form.Label>
                     <Form.Control 
                         type="text and number"
-                        name="naziv"
+                        name="korisnickoIme"
                     />
                 </Form.Group>
 
                 <Form.Group controlId="lozinka">
                     <Form.Label>Lozinka</Form.Label>
                     <Form.Control 
-                        type="text and number"
+                        type="password"
                         name="lozinka"
                     />
                 </Form.Group>

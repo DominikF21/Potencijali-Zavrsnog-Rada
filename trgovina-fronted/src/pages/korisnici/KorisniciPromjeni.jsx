@@ -12,27 +12,30 @@ export default function KorisniciPromjeni(){
     const [korisnik,setKorisnik] = useState({});
 
     async function dohvatiKorisnike(){
-        const odgovor = await KorisnikService.getBySifra(routeParams.sifra)
-        if(!odgovor.ok){
-            alert(dohvatiPorukeAlert(odgovor.podaci));
-            return;
-        }
-        setKorisnik(odgovor.podaci);
+          const odgovor = await Service.getBySifra('Korisnik',routeParams.sifra)
+          if(!odgovor.ok){
+              prikaziError(odgovor.podaci);
+              navigate(RoutesNames.KORISNICI_PREGLED);
+              return;
+          }
+          setKorisnik(odgovor.podaci);
+          setPrikaziModal(false);
     }
 
     useEffect(()=>{
-        //console.log("useEffect")
         dohvatiKorisnike();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     },[]);
 
     async function promjeniKorisnika(korisnik){
-        const odgovor = await KorisnikService.promjeniKorisnika(routeParams.sifra,korisnik);
-        if(odgovor.ok){
-          navigate(RoutesNames.KORISNICI_PREGLED);
-          return;
-        }
-        alert(dohvatiPorukeAlert(odgovor.podaci));
-    }
+          const odgovor = await Service.promjeni('Korisnik',routeParams.sifra,korisnickoIme);
+          if(odgovor.ok){
+            navigate(RoutesNames.KORISNICI_PREGLED);
+            hideLoading();
+            return;
+          }
+          prikaziError(odgovor.podaci);
+      }
 
     function handleSubmit(e){
         e.preventDefault();
@@ -55,18 +58,18 @@ export default function KorisniciPromjeni(){
            
            <Form onSubmit={handleSubmit}>
 
-           <Form.Group controlId="KorisnickoIme">
+                <Form.Group controlId="KorisnickoIme">
                     <Form.Label>Korisnicko Ime</Form.Label>
                     <Form.Control 
                         type="text and number"
-                        name="naziv"
+                        name="korisnickoIme"
                     />
                 </Form.Group>
 
                 <Form.Group controlId="lozinka">
                     <Form.Label>Lozinka</Form.Label>
                     <Form.Control 
-                        type="text and number"
+                        type="password"
                         name="lozinka"
                     />
                 </Form.Group>

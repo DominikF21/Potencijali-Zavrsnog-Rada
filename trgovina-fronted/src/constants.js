@@ -6,6 +6,6 @@ export const RoutesNames = {
 };
 
 export const App = {
-    DEV: true,
+    DEV: false,
     URL: 'https://dominikf21-001-site1.ftempurl.com'
 };
