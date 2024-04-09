@@ -19,13 +19,24 @@ async function obrisiKorisnik(sifra){
 }
 
 async function dodajKorisnik(korisnik){
-    return await httpService.post('/Korisnik',korisnik)
-        .then((res)=>{
-            return obradiUspjeh(res);
-        }).catch((e)=>{
-            return obradiGresku(e);
-        });
+    const odgovor = await httpService.post('/Korisnik',korisnik)
+    .then(()=>{
+        return {ok: true, poruka: 'Uspješno dodano'}
+    })
+    .catch((e)=>{
+        console.log(e.response.data.errors);
+        return {ok: false, poruka: 'Greška'}
+    });
+    return odgovor;
 }
+// async function dodajKorisnik(korisnik){
+//     return await httpService.post('/Korisnik',korisnik)
+//         .then((res)=>{
+//             return obradiUspjeh(res);
+//         }).catch((e)=>{
+//             return obradiGresku(e);
+//         });
+// }
 
 async function promjeniKorisnik(sifra,){
     return await httpService.put('/Korisnik/'+sifra, korisnik)

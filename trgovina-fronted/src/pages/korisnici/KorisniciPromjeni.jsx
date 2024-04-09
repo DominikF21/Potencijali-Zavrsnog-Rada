@@ -40,11 +40,8 @@ export default function KorisniciPromjeni(){
 
         const korisnik = 
         {
-            // naziv: podaci.get('naziv'),
-            // trajanje: parseInt(podaci.get('trajanje')),
-            // cijena: parseFloat(podaci.get('cijena')),
-            // upisnina: parseFloat(podaci.get('upisnina')),
-            // verificiran: podaci.get('verificiran')=='on' ? true: false
+            korisnickoIme: podaci.get('korisnickoIme'),
+            lozinka: parseInt(podaci.get('lozinka')),
           };
 
           //console.log(JSON.stringify(korisnik));
@@ -58,49 +55,22 @@ export default function KorisniciPromjeni(){
            
            <Form onSubmit={handleSubmit}>
 
-                <Form.Group controlId="naziv">
-                    <Form.Label>Naziv</Form.Label>
+           <Form.Group controlId="KorisnickoIme">
+                    <Form.Label>Korisnicko Ime</Form.Label>
                     <Form.Control 
-                        type="text"
-                        defaultValue={korisnik.naziv}
+                        type="text and number"
                         name="naziv"
                     />
                 </Form.Group>
 
-                <Form.Group controlId="trajanje">
-                    <Form.Label>Trajanje</Form.Label>
+                <Form.Group controlId="lozinka">
+                    <Form.Label>Lozinka</Form.Label>
                     <Form.Control 
-                        type="text"
-                        defaultValue={korisnik.trajanje}
-                        name="trajanje"
+                        type="text and number"
+                        name="lozinka"
                     />
                 </Form.Group>
-
-                <Form.Group controlId="cijena">
-                    <Form.Label>Cijena</Form.Label>
-                    <Form.Control 
-                        type="text"
-                        defaultValue={korisnik.cijena}
-                        name="cijena"
-                    />
-                </Form.Group>
-
-                <Form.Group controlId="upisnina">
-                    <Form.Label>Upisnina</Form.Label>
-                    <Form.Control 
-                        type="text"
-                        defaultValue={korisnik.upisnina}
-                        name="upisnina"
-                    />
-                </Form.Group>
-
-                <Form.Group controlId="verificiran">
-                    <Form.Check 
-                        label="Verificiran"
-                        defaultChecked={korisnik.verificiran}
-                        name="verificiran"
-                    />
-                </Form.Group>
+                
 
                 <Row className="akcije">
                     <Col>

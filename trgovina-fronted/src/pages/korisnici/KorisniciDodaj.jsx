@@ -43,7 +43,7 @@ export default function dodajKorisnik(){
            <Form onSubmit={handleSubmit}>
 
                 <Form.Group controlId="KorisnickoIme">
-                    <Form.Label>KorisnickoIme</Form.Label>
+                    <Form.Label>Korisnicko Ime</Form.Label>
                     <Form.Control 
                         type="text and number"
                         name="naziv"
