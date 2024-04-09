@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Button, Col, Container, Form, Row } from "react-bootstrap";
 import { Link, useNavigate, useParams } from "react-router-dom";
-import KorisnikService from "../../services/KorisnikService";
+import Service from "../../services/KorisnikService";
 import { RoutesNames } from "../../constants";
 import { dohvatiPorukeAlert } from "../../services/httpService";
 
@@ -14,12 +14,11 @@ export default function KorisniciPromjeni(){
     async function dohvatiKorisnike(){
           const odgovor = await Service.getBySifra('Korisnik',routeParams.sifra)
           if(!odgovor.ok){
-              prikaziError(odgovor.podaci);
-              navigate(RoutesNames.KORISNICI_PREGLED);
+            alert(dohvatiPorukeAlert(odgovor.podaci));
+            navigate(RoutesNames.KORISNICI_PREGLED);
               return;
           }
           setKorisnik(odgovor.podaci);
-          setPrikaziModal(false);
     }
 
     useEffect(()=>{
@@ -28,14 +27,13 @@ export default function KorisniciPromjeni(){
     },[]);
 
     async function promjeniKorisnika(korisnik){
-          const odgovor = await Service.promjeni('Korisnik',routeParams.sifra,korisnickoIme);
+          const odgovor = await Service.promjeniKorisnik(routeParams.sifra,korisnik);
           if(odgovor.ok){
             navigate(RoutesNames.KORISNICI_PREGLED);
-            hideLoading();
             return;
           }
-          prikaziError(odgovor.podaci);
-      }
+          alert(dohvatiPorukeAlert(odgovor.podaci));
+        }
 
     function handleSubmit(e){
         e.preventDefault();
@@ -44,7 +42,7 @@ export default function KorisniciPromjeni(){
         const korisnik = 
         {
             korisnickoIme: podaci.get('korisnickoIme'),
-            lozinka: parseInt(podaci.get('lozinka')),
+            lozinka: podaci.get('lozinka'),
           };
 
           //console.log(JSON.stringify(korisnik));
@@ -61,7 +59,7 @@ export default function KorisniciPromjeni(){
                 <Form.Group controlId="KorisnickoIme">
                     <Form.Label>Korisnicko Ime</Form.Label>
                     <Form.Control 
-                        type="text and number"
+                        type="text"
                         name="korisnickoIme"
                     />
                 </Form.Group>

@@ -38,7 +38,7 @@ async function dodajKorisnik(korisnik){
 //         });
 // }
 
-async function promjeniKorisnik(sifra,){
+async function promjeniKorisnik(sifra,korisnik){
     return await httpService.put('/Korisnik/'+sifra, korisnik)
         .then((res)=>{
             return obradiUspjeh(res);

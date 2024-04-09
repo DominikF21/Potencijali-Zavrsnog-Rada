@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "6WHkeNYd9lyC8WMphkgSjRg8wnB0/8pyIoVO7pIlMqM=",
+  "Hash": "hJPssVk+Gfr0VJWfFXDbEOA6JkCVUyDnfgcHbbrCu1k=",
   "Source": "ZavrsniTrgovina",
   "BasePath": "_content/ZavrsniTrgovina",
   "Mode": "Default",
@@ -17,12 +17,12 @@
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Polaznik\\Documents\\GitHub\\Potencijali-Zavrsnog-Rada\\ZavrsniTrgovina\\ZavrsniTrgovina\\wwwroot\\assets\\index-CVeJI-LO.js",
+      "Identity": "C:\\Users\\Polaznik\\Documents\\GitHub\\Potencijali-Zavrsnog-Rada\\ZavrsniTrgovina\\ZavrsniTrgovina\\wwwroot\\assets\\index-B4O381vy.js",
       "SourceId": "ZavrsniTrgovina",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Polaznik\\Documents\\GitHub\\Potencijali-Zavrsnog-Rada\\ZavrsniTrgovina\\ZavrsniTrgovina\\wwwroot\\",
       "BasePath": "_content/ZavrsniTrgovina",
-      "RelativePath": "assets/index-CVeJI-LO.js",
+      "RelativePath": "assets/index-B4O381vy.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -31,7 +31,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\index-CVeJI-LO.js"
+      "OriginalItemSpec": "wwwroot\\assets\\index-B4O381vy.js"
     },
     {
       "Identity": "C:\\Users\\Polaznik\\Documents\\GitHub\\Potencijali-Zavrsnog-Rada\\ZavrsniTrgovina\\ZavrsniTrgovina\\wwwroot\\assets\\index-jwFusXam.css",
