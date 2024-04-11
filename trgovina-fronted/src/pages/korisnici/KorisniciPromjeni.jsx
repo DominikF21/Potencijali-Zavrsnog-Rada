@@ -9,7 +9,7 @@ export default function KorisniciPromjeni(){
 
     const navigate = useNavigate();
     const routeParams = useParams();
-    const [korisnik,setKorisnik] = useState({});
+    const [korisnik, setKorisnik] = useState({});
 
     async function dohvatiKorisnike(){
           const odgovor = await Service.getBySifra('Korisnik',routeParams.sifra)
@@ -23,7 +23,6 @@ export default function KorisniciPromjeni(){
 
     useEffect(()=>{
         dohvatiKorisnike();
-        // eslint-disable-next-line react-hooks/exhaustive-deps
     },[]);
 
     async function promjeniKorisnika(korisnik){
@@ -38,15 +37,10 @@ export default function KorisniciPromjeni(){
     function handleSubmit(e){
         e.preventDefault();
         const podaci = new FormData(e.target);
-
-        const korisnik = 
-        {
+        promjeniKorisnika({
             korisnickoIme: podaci.get('korisnickoIme'),
             lozinka: podaci.get('lozinka'),
-          };
-
-          //console.log(JSON.stringify(korisnik));
-          promjeniKorisnika(korisnik);
+        });
     }
 
 
