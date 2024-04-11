@@ -3,6 +3,7 @@ export const RoutesNames = {
     KORISNICI_PREGLED: '/korisnici',
     KORISNICI_NOVI: '/korisnici/dodaj',
     KORISNICI_PROMJENI: '/korisnici/:sifra'
+
 };
 
 export const App = {

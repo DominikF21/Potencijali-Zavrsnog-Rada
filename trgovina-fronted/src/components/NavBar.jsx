@@ -38,7 +38,9 @@ function NavBar() {
                 Stavke
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
+              <NavDropdown.Item
+                onClick={()=>navigate(RoutesNames.PROIZVODI_PREGLED)}
+              >
                 Proizvodi
               </NavDropdown.Item>
             </NavDropdown>

@@ -12,7 +12,7 @@ export default function KorisniciPromjeni(){
     const [korisnik, setKorisnik] = useState({});
 
     async function dohvatiKorisnike(){
-          const odgovor = await Service.getBySifra('Korisnik',routeParams.sifra)
+          const odgovor = await Service.getBySifra(routeParams.sifra)
           if(!odgovor.ok){
             alert(dohvatiPorukeAlert(odgovor.podaci));
             navigate(RoutesNames.KORISNICI_PREGLED);
@@ -37,6 +37,7 @@ export default function KorisniciPromjeni(){
     function handleSubmit(e){
         e.preventDefault();
         const podaci = new FormData(e.target);
+
         promjeniKorisnika({
             korisnickoIme: podaci.get('korisnickoIme'),
             lozinka: podaci.get('lozinka'),
@@ -54,6 +55,7 @@ export default function KorisniciPromjeni(){
                     <Form.Label>Korisnicko Ime</Form.Label>
                     <Form.Control 
                         type="text"
+                        defaultValue={korisnik.korisnickoIme}
                         name="korisnickoIme"
                     />
                 </Form.Group>
@@ -62,6 +64,7 @@ export default function KorisniciPromjeni(){
                     <Form.Label>Lozinka</Form.Label>
                     <Form.Control 
                         type="password"
+                        defaultValue={korisnik.lozinka}
                         name="lozinka"
                     />
                 </Form.Group>

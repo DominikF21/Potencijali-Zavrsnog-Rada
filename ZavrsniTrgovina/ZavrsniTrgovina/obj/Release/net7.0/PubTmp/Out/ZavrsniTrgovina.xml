@@ -52,23 +52,20 @@
              <remarks>
              Primjer upita:
             
-                PUT api/v1/smjer/1
+                PUT api/v1/korisnik/1
             
              {
               "sifra": 0,
-              "naziv": "Novi naziv",
-              "trajanje": 120,
-              "cijena": 890.22,
-              "upisnina": 0,
-              "verificiran": true
+              "korisnickoIme": "Novi naziv",
+              "lozinka": 1234,
              }
             
              </remarks>
-             <param name="sifra">Šifra smjera koji se mijenja</param>  
-             <param name="korisnik">Smjer za unijeti u JSON formatu</param>  
-             <returns>Svi poslani podaci od smjera koji su spremljeni u bazi</returns>
+             <param name="sifra">Šifra korisnika koji se mijenja</param>  
+             <param name="korisnik">korisnik za unijeti u JSON formatu</param>  
+             <returns>Svi poslani podaci od korisnika koji su spremljeni u bazi</returns>
              <response code="200">Sve je u redu</response>
-             <response code="204">Nema u bazi smjera kojeg želimo promijeniti</response>
+             <response code="204">Nema u bazi korisnika kojeg želimo promijeniti</response>
              <response code="415">Nismo poslali JSON</response> 
              <response code="503">Baza nedostupna</response> 
         </member>
@@ -85,7 +82,7 @@
              <param name="sifra">Šifra korisnika koji se briše</param>  
              <returns>Odgovor da li je obrisano ili ne</returns>
              <response code="200">Sve je u redu, obrisano je u bazi</response>
-             <response code="204">Nema u bazi smjera kojeg želimo obrisati</response>
+             <response code="204">Nema u bazi korisnika kojeg želimo obrisati</response>
              <response code="503">Problem s bazom</response> 
         </member>
         <member name="T:Zavrsni_Trgovina.Data.TrgovinaContext">
