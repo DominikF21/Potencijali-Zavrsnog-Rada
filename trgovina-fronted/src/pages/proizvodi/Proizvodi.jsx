@@ -11,10 +11,10 @@ import { dohvatiPorukeAlert } from "../../services/httpService";
 
 
 export default function Proizvodi(){
-    const [proizvodi,setProizvod] = useState();
+    const [proizvod,setProizvod] = useState();
     const navigate = useNavigate();
 
-    async function dohvatiProizvod(){
+    async function dohvatiProizvode(){
         const odgovor = await ProizvodService.getProizvod();
         if(!odgovor.ok){
             alert(dohvatiPorukeAlert(odgovor.podaci));
@@ -27,7 +27,7 @@ export default function Proizvodi(){
         const odgovor = await ProizvodService.obrisiProizvod(sifra);
         alert(dohvatiPorukeAlert(odgovor.podaci));
         if (odgovor.ok){
-            dohvatiProizvod();
+            dohvatiProizvode();
         }
     }
 
@@ -42,7 +42,7 @@ export default function Proizvodi(){
     return (
 
         <Container>
-            <Link to={RoutesNames.KORISNICI_NOVI} className="btn btn-success gumb">
+            <Link to={RoutesNames.PROIZVODI_NOVI} className="btn btn-success gumb">
                 <IoIosAdd
                 size={25}
                 /> Dodaj
@@ -50,20 +50,20 @@ export default function Proizvodi(){
             <Table striped bordered hover responsive>
                 <thead>
                     <tr>
-                        <th>korisnickoIme</th>
+                        <th>proizvod</th>
                         <th>Uredi</th>
                     </tr>
                 </thead>
                 <tbody>
-                    {korisnici && korisnici.map((korisnik,index)=>(
+                    {proizvod && proizvod.map((proizvod,index)=>(
                         <tr key={index}>
-                            <td>{korisnik.korisnickoIme}</td>
+                            <td>{proizvod.proizvod}</td>
                            
                            
                             <td className="sredina">
                                 <Button 
                                 variant="primary"
-                                onClick={()=>{navigate(`/korisnici/${korisnik.sifra}`)}}>
+                                onClick={()=>{navigate(`/proizvod/${proizvod.sifra}`)}}>
                                     <FaEdit 
                                     size={25}
                                     />

@@ -10,6 +10,9 @@ import './App.css';
 import KorisniciDodaj from "./pages/korisnici/KorisniciDodaj"
 import KorisniciPromjeni from "./pages/korisnici/KorisniciPromjeni"
 
+import Proizvodi from "./pages/proizvodi/Proizvodi"
+import ProizvodiDodaj from "./pages/proizvodi/ProizvodiDodaj"
+import ProizvodiPromjeni from "./pages/proizvodi/ProizvodiPromjeni"
 
 function App() {
   return (
@@ -21,6 +24,11 @@ function App() {
           <Route path={RoutesNames.KORISNICI_PREGLED} element={<Korisnici />} />
           <Route path={RoutesNames.KORISNICI_NOVI} element={<KorisniciDodaj />} />
           <Route path={RoutesNames.KORISNICI_PROMJENI} element={<KorisniciPromjeni />} />
+
+
+          <Route path={RoutesNames.PROIZVODI_PREGLED} element={<Proizvodi />} />
+          <Route path={RoutesNames.PROIZVODI_NOVI} element={<ProizvodiDodaj />} />
+          <Route path={RoutesNames.PROIZVODI_PROMJENI} element={<ProizvodiPromjeni />} />
         </>
       </Routes>
     </>
