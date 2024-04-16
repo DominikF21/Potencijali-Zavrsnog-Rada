@@ -35,7 +35,7 @@ export default function Proizvodi(){
      // Ovo se poziva dvaput u dev ali jednom u produkciji
     // https://stackoverflow.com/questions/60618844/react-hooks-useeffect-is-called-twice-even-if-an-empty-array-is-used-as-an-ar
     useEffect(()=>{
-        dohvatiProizvod();
+        dohvatiProizvode();
     },[]);
 
 
@@ -50,7 +50,7 @@ export default function Proizvodi(){
             <Table striped bordered hover responsive>
                 <thead>
                     <tr>
-                        <th>proizvod</th>
+                        <th>Proizvod</th>
                         <th>Uredi</th>
                     </tr>
                 </thead>

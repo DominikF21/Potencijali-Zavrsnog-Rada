@@ -111,5 +111,15 @@
             Lozinka u bazi
             </summary>
         </member>
+        <member name="P:Zavrsni_Trgovina.Models.Proizvod.Naziv">
+             <summary>
+            Naziv u bazi
+             </summary>
+        </member>
+        <member name="P:Zavrsni_Trgovina.Models.Proizvod.Cijena">
+             <summary>
+            Cijena u bazi
+             </summary>
+        </member>
     </members>
 </doc>
