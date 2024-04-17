@@ -40,7 +40,7 @@ export default function ProizvodiPromjeni(){
 
         ProizvodiPromjeni({
             Proizvod: podaci.get('proizvod'),
-            Broj: podaci.get('broj'),
+            Cijena: podaci.get('cijena'),
         });
     }
 
@@ -60,12 +60,12 @@ export default function ProizvodiPromjeni(){
                     />
                 </Form.Group>
 
-                <Form.Group controlId="lozinka">
-                    <Form.Label>Broj</Form.Label>
+                <Form.Group controlId="Cijena">
+                    <Form.Label>Cijena</Form.Label>
                     <Form.Control 
                         type="number"
-                        defaultValue={proizvod.broj}
-                        name="broj"
+                        defaultValue={proizvod.cijena}
+                        name="cijena"
                     />
                 </Form.Group>
                 

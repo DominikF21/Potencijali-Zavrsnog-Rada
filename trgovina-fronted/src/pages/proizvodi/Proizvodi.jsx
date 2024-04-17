@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Button, Container, Table } from "react-bootstrap";
 import ProizvodService from "../../services/ProizvodService";
+import { NumericFormat } from "react-number-format";
 // import { NumericFormat } from "react-number-format";
 // import { GrValidate } from "react-icons/gr";
 import { IoIosAdd } from "react-icons/io";
@@ -51,6 +52,7 @@ export default function Proizvodi(){
                 <thead>
                     <tr>
                         <th>Proizvod</th>
+                        <th>Cijena</th>
                         <th>Uredi</th>
                     </tr>
                 </thead>
@@ -58,12 +60,27 @@ export default function Proizvodi(){
                     {proizvod && proizvod.map((proizvod,index)=>(
                         <tr key={index}>
                             <td>{proizvod.proizvod}</td>
+                            <td className={proizvod.cijena==null ? 'sredina' : 'desno'}>
+                                {proizvod.cijena==null 
+                                ? 'Nije definirano'
+                                :
+                                    <NumericFormat 
+                                    value={proizvod.cijena}
+                                    displayType={'text'}
+                                    thousandSeparator='.'
+                                    decimalSeparator=','
+                                    prefix={'€'}
+                                    decimalScale={2}
+                                    fixedDecimalScale
+                                    />
+                                }
+                            </td>
                            
                            
                             <td className="sredina">
                                 <Button 
                                 variant="primary"
-                                onClick={()=>{navigate(`/proizvod/${proizvod.sifra}`)}}>
+                                onClick={()=>{navigate(`/Proizvod/${proizvod.sifra}`)}}>
                                     <FaEdit 
                                     size={25}
                                     />
