@@ -57,7 +57,7 @@ export default function Proizvodi(){
                 <tbody>
                     {proizvod && proizvod.map((proizvod,index)=>(
                         <tr key={index}>
-                            <td>{proizvod.proizvod}</td>
+                            <td>{proizvod.naziv}</td>
                             <td className={proizvod.cijena==null ? 'sredina' : 'desno'}>
                                 {proizvod.cijena==null 
                                 ? 'Nije definirano'
