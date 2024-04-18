@@ -2,8 +2,6 @@ import { useEffect, useState } from "react";
 import { Button, Container, Table } from "react-bootstrap";
 import ProizvodService from "../../services/ProizvodService";
 import { NumericFormat } from "react-number-format";
-// import { NumericFormat } from "react-number-format";
-// import { GrValidate } from "react-icons/gr";
 import { IoIosAdd } from "react-icons/io";
 import { FaEdit, FaTrash } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
