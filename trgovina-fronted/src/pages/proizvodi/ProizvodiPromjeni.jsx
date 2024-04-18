@@ -12,7 +12,7 @@ export default function ProizvodiPromjeni(){
     const routeParams = useParams();
 
 
-    async function dohvatiProizvod(){
+    async function dohvatiProizvode(){
           const odgovor = await Service.getBySifra(routeParams.sifra)
           if(!odgovor.ok){
             alert(dohvatiPorukeAlert(odgovor.podaci));
@@ -23,7 +23,7 @@ export default function ProizvodiPromjeni(){
     }
 
     useEffect(()=>{
-        dohvatiProizvod();
+        dohvatiProizvode();
     },[]);
 
     async function ProizvodiPromjeni(proizvod){

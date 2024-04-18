@@ -211,7 +211,7 @@ namespace Zavrsni_Trgovina.Controllers
                     return StatusCode(StatusCodes.Status204NoContent, sifra);
                 }
 
-                _context.Korisnici.Remove(korisnikIzBaze);
+                _context.Korisnici.Remove(korisnikIzBaze); 
                 _context.SaveChanges();
 
                 return Ok("Obrisano"); //return new JsonResult(new { poruka = "Obrisano" });// // ovo nije baš najbolja praksa ali da znake kako i to može

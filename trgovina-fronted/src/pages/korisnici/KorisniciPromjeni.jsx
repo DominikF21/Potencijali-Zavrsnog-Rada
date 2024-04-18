@@ -23,7 +23,7 @@ export default function KorisniciPromjeni(){
 
     useEffect(()=>{
         dohvatiKorisnike();
-    },[]);
+    },[]); 
 
     async function promjeniKorisnika(korisnik){
           const odgovor = await Service.promjeniKorisnik(routeParams.sifra,korisnik);

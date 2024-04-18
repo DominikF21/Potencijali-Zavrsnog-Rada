@@ -151,9 +151,9 @@ namespace Zavrsni_Trgovina.Controllers
                     _context.Proizvodi.Remove(entitetIzbaze);
                     _context.SaveChanges();
 
-                    return new JsonResult(new { poruka = "Obrisano" }); // ovo nije baš najbolja praksa ali da znate kako i to može
+                return Ok("Obrisano"); // ovo nije baš najbolja praksa ali da znate kako i to može
 
-                }
+            }
                 catch (Exception ex)
                 {
                     return StatusCode(StatusCodes.Status503ServiceUnavailable,
