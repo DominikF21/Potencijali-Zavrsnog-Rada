@@ -6,10 +6,11 @@ import { RoutesNames } from "../../constants";
 import { dohvatiPorukeAlert } from "../../services/httpService";
 
 export default function ProizvodiPromjeni(){
+    const [proizvod, setProizvod] = useState({});
 
     const navigate = useNavigate();
     const routeParams = useParams();
-    const [proizvod, setProizvod] = useState({});
+
 
     async function dohvatiProizvod(){
           const odgovor = await Service.getBySifra(routeParams.sifra)
@@ -39,9 +40,10 @@ export default function ProizvodiPromjeni(){
         const podaci = new FormData(e.target);
 
         ProizvodiPromjeni({
-            Proizvod: podaci.get('proizvod'),
-            Cijena: podaci.get('cijena'),
+            naziv: podaci.get('naziv'),
+            cijena: podaci.get('cijena'),
         });
+        
     }
 
 
@@ -51,19 +53,19 @@ export default function ProizvodiPromjeni(){
            
            <Form onSubmit={handleSubmit}>
 
-                <Form.Group controlId="Proizvod">
+                <Form.Group controlId="naziv">
                     <Form.Label>Ime Proizvoda</Form.Label>
                     <Form.Control 
                         type="text"
-                        defaultValue={proizvod.proizvod}
-                        name="Proizvod"
+                        defaultValue={proizvod.naziv}
+                        name="naziv"
                     />
                 </Form.Group>
 
-                <Form.Group controlId="Cijena">
+                <Form.Group controlId="cijena">
                     <Form.Label>Cijena</Form.Label>
                     <Form.Control 
-                        type="number"
+                        type="currency"
                         defaultValue={proizvod.cijena}
                         name="cijena"
                     />

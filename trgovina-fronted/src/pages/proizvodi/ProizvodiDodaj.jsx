@@ -42,8 +42,8 @@ export default function ProizvodiDodaj(){
 
            <Form onSubmit={handleSubmit}>
 
-                <Form.Group controlId="naziv">
-                    <Form.Label>Naziv</Form.Label>
+                <Form.Group controlId="Proizvod">
+                    <Form.Label>Ime Proizvoda</Form.Label>
                     <Form.Control 
                         type="text and number"
                         name="naziv"
