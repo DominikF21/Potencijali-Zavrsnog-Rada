@@ -10,6 +10,7 @@ export default function KorisniciPromjeni(){
     const navigate = useNavigate();
     const routeParams = useParams();
     const [korisnik, setKorisnik] = useState({});
+    
 
     async function dohvatiKorisnike(){
           const odgovor = await Service.getBySifra(routeParams.sifra)

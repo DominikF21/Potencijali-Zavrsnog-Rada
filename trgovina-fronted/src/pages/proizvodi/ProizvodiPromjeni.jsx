@@ -5,7 +5,7 @@ import Service from "../../services/ProizvodService";
 import { RoutesNames } from "../../constants";
 import { dohvatiPorukeAlert } from "../../services/httpService";
 
-export default function ProizvodiPromjeni(){
+export default function ProizvodPromjeni(){
     const [proizvod, setProizvod] = useState({});
 
     const navigate = useNavigate();
@@ -26,8 +26,8 @@ export default function ProizvodiPromjeni(){
         dohvatiProizvode();
     },[]);
 
-    async function ProizvodiPromjeni(proizvod){
-          const odgovor = await Service.ProizvodiPromjeni(routeParams.sifra,proizvod);
+    async function ProizvodPromjeni(proizvod){
+          const odgovor = await Service.promjeniProizvod(routeParams.sifra,proizvod);
           if(odgovor.ok){
             navigate(RoutesNames.PROIZVODI_PREGLED);
             return;
@@ -39,7 +39,7 @@ export default function ProizvodiPromjeni(){
         e.preventDefault();
         const podaci = new FormData(e.target);
 
-        ProizvodiPromjeni({
+        ProizvodPromjeni({
             naziv: podaci.get('naziv'),
             cijena: podaci.get('cijena'),
         });

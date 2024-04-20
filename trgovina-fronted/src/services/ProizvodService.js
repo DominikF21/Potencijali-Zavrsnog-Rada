@@ -31,7 +31,7 @@ async function dodajProizvod(proizvod){
 }
 
 async function promjeniProizvod(sifra,proizvod){
-    return await httpService.put('/Proizvod/'+sifra, proizvod)
+    return await httpService.put('/Proizvod/'+ sifra, proizvod)
         .then((res)=>{
             return obradiUspjeh(res);
         }).catch((e)=>{
