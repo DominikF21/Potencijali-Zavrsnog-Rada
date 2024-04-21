@@ -78,7 +78,7 @@ export default function Proizvodi(){
                             <td className="sredina">
                                 <Button 
                                 variant="primary"
-                                onClick={()=>{navigate(`/proizvod/${proizvod.sifra}`)}}>
+                                onClick={()=>{navigate(`/proizvodi/${proizvod.sifra}`)}}>
                                     <FaEdit 
                                     size={25}
                                     />
