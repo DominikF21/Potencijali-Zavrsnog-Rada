@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ZavrsniTrgovina")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d9c653d3567f0e967f7d282418d955c43dd80f15")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+068f2706c7505c17a332152e13b0b604137f020b")]
 [assembly: System.Reflection.AssemblyProductAttribute("ZavrsniTrgovina")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ZavrsniTrgovina")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
