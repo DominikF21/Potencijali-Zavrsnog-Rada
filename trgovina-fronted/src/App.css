@@ -27,3 +27,10 @@
     align-items: center;
     justify-content: center;
 }
+
+body{
+    background-image: url('Background-cart.png');
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+}
