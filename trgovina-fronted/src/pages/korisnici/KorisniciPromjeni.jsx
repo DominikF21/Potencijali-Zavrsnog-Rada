@@ -4,15 +4,20 @@ import { Link, useNavigate, useParams } from "react-router-dom";
 import Service from "../../services/KorisnikService";
 import { RoutesNames } from "../../constants";
 import { dohvatiPorukeAlert } from "../../services/httpService";
+import useLoading from "../../hooks/useLoading";
+
 
 export default function KorisniciPromjeni(){
 
     const navigate = useNavigate();
     const routeParams = useParams();
     const [korisnik, setKorisnik] = useState({});
+    const { showLoading, hideLoading } = useLoading();
+
     
 
     async function dohvatiKorisnike(){
+        showLoading();
           const odgovor = await Service.getBySifra(routeParams.sifra)
           if(!odgovor.ok){
             alert(dohvatiPorukeAlert(odgovor.podaci));
@@ -20,6 +25,7 @@ export default function KorisniciPromjeni(){
               return;
           }
           setKorisnik(odgovor.podaci);
+          hideLoading();
     }
 
     useEffect(()=>{
@@ -27,12 +33,15 @@ export default function KorisniciPromjeni(){
     },[]); 
 
     async function promjeniKorisnika(korisnik){
+        showLoading();
           const odgovor = await Service.promjeniKorisnik(routeParams.sifra,korisnik);
           if(odgovor.ok){
             navigate(RoutesNames.KORISNICI_PREGLED);
+            hideLoading();
             return;
           }
           alert(dohvatiPorukeAlert(odgovor.podaci));
+          hideLoading();
         }
 
     function handleSubmit(e){

@@ -8,27 +8,33 @@ import { FaEdit, FaTrash } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 import { RoutesNames } from "../../constants";
 import { dohvatiPorukeAlert } from "../../services/httpService";
+import useLoading from "../../hooks/useLoading";
 
 
 export default function Korisnici(){
     const [korisnici,setKorisnici] = useState();
     const navigate = useNavigate();
+    const { showLoading, hideLoading } = useLoading();
 
     async function dohvatiKorisnike(){
+        showLoading();
         const odgovor = await KorisnikService.getKorisnici();
         if(!odgovor.ok){
             alert(dohvatiPorukeAlert(odgovor.podaci));
             return;
         }
         setKorisnici(odgovor.podaci);
+        hideLoading();
     }
 
     async function obrisiKorisnik(sifra){
+        showLoading();
         const odgovor = await KorisnikService.obrisiKorisnik(sifra);
         alert(dohvatiPorukeAlert(odgovor.podaci));
         if (odgovor.ok){
             dohvatiKorisnike();
         }
+        hideLoading();
     }
 
 

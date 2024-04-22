@@ -3,12 +3,16 @@ import { Link, useNavigate } from "react-router-dom";
 import KorisnikService from "../../services/KorisnikService";
 import { RoutesNames } from "../../constants";
 import { dohvatiPorukeAlert } from "../../services/httpService";
+import useLoading from "../../hooks/useLoading";
+
 
 export default function dodajKorisnik(){
     const navigate = useNavigate();
+    const { showLoading, hideLoading } = useLoading();
 
 
     async function dodajKorisnik(korisnik){
+        showLoading();
         const odgovor = await KorisnikService.dodajKorisnik(korisnik);
         if(odgovor.ok){
           navigate(RoutesNames.KORISNICI_PREGLED);
@@ -16,6 +20,7 @@ export default function dodajKorisnik(){
         }
 
         alert(dohvatiPorukeAlert(odgovor.podaci));
+        hideLoading();
         
     }
 

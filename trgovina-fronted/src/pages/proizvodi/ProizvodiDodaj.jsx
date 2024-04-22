@@ -3,20 +3,24 @@ import { Link, useNavigate } from "react-router-dom";
 import ProizvodService from "../../services/ProizvodService";
 import { RoutesNames } from "../../constants";
 import { dohvatiPorukeAlert } from "../../services/httpService";
+import useLoading from '../../hooks/useLoading';
+
 
 export default function ProizvodiDodaj(){
     const navigate = useNavigate();
+    const { showLoading, hideLoading } = useLoading();
 
 
     async function dodajProizvod(Proizvod){
+        showLoading();
         const odgovor = await ProizvodService.dodajProizvod(Proizvod);
         if(odgovor.ok){
+          hideLoading();
           navigate(RoutesNames.PROIZVODI_PREGLED);
           return
         }
-
         alert(dohvatiPorukeAlert(odgovor.podaci));
-        
+        hideLoading();
     }
 
     function handleSubmit(e){

@@ -7,27 +7,35 @@ import { FaEdit, FaTrash } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 import { RoutesNames } from "../../constants";
 import { dohvatiPorukeAlert } from "../../services/httpService";
+import useLoading from "../../hooks/useLoading";
 
 
 export default function Proizvodi(){
     const [proizvod,setProizvod] = useState();
     const navigate = useNavigate();
+    const { showLoading, hideLoading } = useLoading();
+
 
     async function dohvatiProizvode(){
+        showLoading();
         const odgovor = await ProizvodService.getProizvod();
         if(!odgovor.ok){
             alert(dohvatiPorukeAlert(odgovor.podaci));
+            hideLoading();
             return;
         }
         setProizvod(odgovor.podaci);
+        hideLoading();
     }
 
     async function obrisiProizvod(sifra){
+        showLoading();
         const odgovor = await ProizvodService.obrisiProizvod(sifra);
         alert(dohvatiPorukeAlert(odgovor.podaci));
         if (odgovor.ok){
             dohvatiProizvode();
         }
+        hideLoading();
     }
 
 

@@ -4,22 +4,28 @@ import { Link, useNavigate, useParams } from "react-router-dom";
 import Service from "../../services/ProizvodService";
 import { RoutesNames } from "../../constants";
 import { dohvatiPorukeAlert } from "../../services/httpService";
+import useLoading from '../../hooks/useLoading';
+
 
 export default function ProizvodPromjeni(){
     const [proizvod, setProizvod] = useState({});
 
     const navigate = useNavigate();
     const routeParams = useParams();
+    const { showLoading, hideLoading } = useLoading();
 
 
     async function dohvatiProizvode(){
+        showLoading();
           const odgovor = await Service.getBySifra(routeParams.sifra)
           if(!odgovor.ok){
             alert(dohvatiPorukeAlert(odgovor.podaci));
             navigate(RoutesNames.PROIZVODI_PREGLED);
+            hideLoading();
               return;
           }
           setProizvod(odgovor.podaci);
+          hideLoading();
     }
 
     useEffect(()=>{
@@ -27,12 +33,15 @@ export default function ProizvodPromjeni(){
     },[]);
 
     async function ProizvodPromjeni(proizvod){
+        showLoading();
           const odgovor = await Service.promjeniProizvod(routeParams.sifra,proizvod);
           if(odgovor.ok){
+            hideLoading();
             navigate(RoutesNames.PROIZVODI_PREGLED);
             return;
           }
           alert(dohvatiPorukeAlert(odgovor.podaci));
+          hideLoading();
         }
 
     function handleSubmit(e){
