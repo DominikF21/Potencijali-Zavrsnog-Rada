@@ -139,10 +139,11 @@ C:\Users\Gamers\Documents\GitHub\Potencijali-Zavrsnog-Rada\ZavrsniTrgovina\Zavrs
 C:\Users\Gamers\Documents\GitHub\Potencijali-Zavrsnog-Rada\ZavrsniTrgovina\ZavrsniTrgovina\obj\Debug\net7.0\staticwebassets.build.json
 C:\Users\Gamers\Documents\GitHub\Potencijali-Zavrsnog-Rada\ZavrsniTrgovina\ZavrsniTrgovina\obj\Debug\net7.0\staticwebassets.development.json
 C:\Users\Gamers\Documents\GitHub\Potencijali-Zavrsnog-Rada\ZavrsniTrgovina\ZavrsniTrgovina\obj\Debug\net7.0\scopedcss\bundle\ZavrsniTrgovina.styles.css
-C:\Users\Gamers\Documents\GitHub\Potencijali-Zavrsnog-Rada\ZavrsniTrgovina\ZavrsniTrgovina\obj\Debug\net7.0\ZavrsniTrgovina.csproj.CopyComplete
 C:\Users\Gamers\Documents\GitHub\Potencijali-Zavrsnog-Rada\ZavrsniTrgovina\ZavrsniTrgovina\obj\Debug\net7.0\ZavrsniTrgovina.dll
 C:\Users\Gamers\Documents\GitHub\Potencijali-Zavrsnog-Rada\ZavrsniTrgovina\ZavrsniTrgovina\obj\Debug\net7.0\refint\ZavrsniTrgovina.dll
 C:\Users\Gamers\Documents\GitHub\Potencijali-Zavrsnog-Rada\ZavrsniTrgovina\ZavrsniTrgovina\obj\Debug\net7.0\ZavrsniTrgovina.xml
 C:\Users\Gamers\Documents\GitHub\Potencijali-Zavrsnog-Rada\ZavrsniTrgovina\ZavrsniTrgovina\obj\Debug\net7.0\ZavrsniTrgovina.pdb
 C:\Users\Gamers\Documents\GitHub\Potencijali-Zavrsnog-Rada\ZavrsniTrgovina\ZavrsniTrgovina\obj\Debug\net7.0\ZavrsniTrgovina.genruntimeconfig.cache
 C:\Users\Gamers\Documents\GitHub\Potencijali-Zavrsnog-Rada\ZavrsniTrgovina\ZavrsniTrgovina\obj\Debug\net7.0\ref\ZavrsniTrgovina.dll
+C:\Users\Gamers\Documents\GitHub\Potencijali-Zavrsnog-Rada\ZavrsniTrgovina\ZavrsniTrgovina\obj\Debug\net7.0\ZavrsniTrgovina.sourcelink.json
+C:\Users\Gamers\Documents\GitHub\Potencijali-Zavrsnog-Rada\ZavrsniTrgovina\ZavrsniTrgovina\obj\Debug\net7.0\ZavrsniT.922945A2.Up2Date

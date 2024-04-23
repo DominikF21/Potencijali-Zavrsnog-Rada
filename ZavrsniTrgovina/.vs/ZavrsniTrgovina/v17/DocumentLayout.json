@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\Gamers\\Documents\\GitHub\\Potencijali-Zavrsnog-Rada\\ZavrsniTrgovina\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8DBCB8EA-9698-43E5-80F7-160BC2AD6452}|ZavrsniTrgovina\\ZavrsniTrgovina.csproj|c:\\users\\gamers\\documents\\github\\potencijali-zavrsnog-rada\\zavrsnitrgovina\\zavrsnitrgovina\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8DBCB8EA-9698-43E5-80F7-160BC2AD6452}|ZavrsniTrgovina\\ZavrsniTrgovina.csproj|solutionrelative:zavrsnitrgovina\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DBCB8EA-9698-43E5-80F7-160BC2AD6452}|ZavrsniTrgovina\\ZavrsniTrgovina.csproj|c:\\users\\gamers\\documents\\github\\potencijali-zavrsnog-rada\\zavrsnitrgovina\\zavrsnitrgovina\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8DBCB8EA-9698-43E5-80F7-160BC2AD6452}|ZavrsniTrgovina\\ZavrsniTrgovina.csproj|solutionrelative:zavrsnitrgovina\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DBCB8EA-9698-43E5-80F7-160BC2AD6452}|ZavrsniTrgovina\\ZavrsniTrgovina.csproj|c:\\users\\gamers\\documents\\github\\potencijali-zavrsnog-rada\\zavrsnitrgovina\\zavrsnitrgovina\\models\\proizvod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DBCB8EA-9698-43E5-80F7-160BC2AD6452}|ZavrsniTrgovina\\ZavrsniTrgovina.csproj|solutionrelative:zavrsnitrgovina\\models\\proizvod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8DBCB8EA-9698-43E5-80F7-160BC2AD6452}|ZavrsniTrgovina\\ZavrsniTrgovina.csproj|c:\\users\\gamers\\documents\\github\\potencijali-zavrsnog-rada\\zavrsnitrgovina\\zavrsnitrgovina\\controllers\\korisnikcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8DBCB8EA-9698-43E5-80F7-160BC2AD6452}|ZavrsniTrgovina\\ZavrsniTrgovina.csproj|solutionrelative:zavrsnitrgovina\\controllers\\korisnikcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -17,10 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{8DBCB8EA-9698-43E5-80F7-160BC2AD6452}|ZavrsniTrgovina\\ZavrsniTrgovina.csproj|c:\\users\\gamers\\documents\\github\\potencijali-zavrsnog-rada\\zavrsnitrgovina\\zavrsnitrgovina\\models\\korisnik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8DBCB8EA-9698-43E5-80F7-160BC2AD6452}|ZavrsniTrgovina\\ZavrsniTrgovina.csproj|solutionrelative:zavrsnitrgovina\\models\\korisnik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8DBCB8EA-9698-43E5-80F7-160BC2AD6452}|ZavrsniTrgovina\\ZavrsniTrgovina.csproj|c:\\users\\gamers\\documents\\github\\potencijali-zavrsnog-rada\\zavrsnitrgovina\\zavrsnitrgovina\\models\\proizvod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DBCB8EA-9698-43E5-80F7-160BC2AD6452}|ZavrsniTrgovina\\ZavrsniTrgovina.csproj|solutionrelative:zavrsnitrgovina\\models\\proizvod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,11 +38,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\Gamers\\Documents\\GitHub\\Potencijali-Zavrsnog-Rada\\ZavrsniTrgovina\\ZavrsniTrgovina\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "ZavrsniTrgovina\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\Gamers\\Documents\\GitHub\\Potencijali-Zavrsnog-Rada\\ZavrsniTrgovina\\ZavrsniTrgovina\\appsettings.Development.json",
+              "RelativeToolTip": "ZavrsniTrgovina\\appsettings.Development.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-23T13:09:41.059Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Gamers\\Documents\\GitHub\\Potencijali-Zavrsnog-Rada\\ZavrsniTrgovina\\ZavrsniTrgovina\\appsettings.json",
+              "RelativeDocumentMoniker": "ZavrsniTrgovina\\appsettings.json",
+              "ToolTip": "C:\\Users\\Gamers\\Documents\\GitHub\\Potencijali-Zavrsnog-Rada\\ZavrsniTrgovina\\ZavrsniTrgovina\\appsettings.json",
+              "RelativeToolTip": "ZavrsniTrgovina\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAACXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-23T13:07:15.009Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Korisnik.cs",
               "DocumentMoniker": "C:\\Users\\Gamers\\Documents\\GitHub\\Potencijali-Zavrsnog-Rada\\ZavrsniTrgovina\\ZavrsniTrgovina\\Models\\Korisnik.cs",
               "RelativeDocumentMoniker": "ZavrsniTrgovina\\Models\\Korisnik.cs",
@@ -46,7 +80,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Entitet.cs",
               "DocumentMoniker": "C:\\Users\\Gamers\\Documents\\GitHub\\Potencijali-Zavrsnog-Rada\\ZavrsniTrgovina\\ZavrsniTrgovina\\Models\\Entitet.cs",
               "RelativeDocumentMoniker": "ZavrsniTrgovina\\Models\\Entitet.cs",
@@ -58,7 +92,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Proizvod.cs",
               "DocumentMoniker": "C:\\Users\\Gamers\\Documents\\GitHub\\Potencijali-Zavrsnog-Rada\\ZavrsniTrgovina\\ZavrsniTrgovina\\Models\\Proizvod.cs",
               "RelativeDocumentMoniker": "ZavrsniTrgovina\\Models\\Proizvod.cs",
@@ -66,11 +100,12 @@
               "RelativeToolTip": "ZavrsniTrgovina\\Models\\Proizvod.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T20:05:27.967Z"
+              "WhenOpened": "2024-04-18T20:05:27.967Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "KorisnikController.cs",
               "DocumentMoniker": "C:\\Users\\Gamers\\Documents\\GitHub\\Potencijali-Zavrsnog-Rada\\ZavrsniTrgovina\\ZavrsniTrgovina\\Controllers\\KorisnikController.cs",
               "RelativeDocumentMoniker": "ZavrsniTrgovina\\Controllers\\KorisnikController.cs",
@@ -83,7 +118,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "ProizvodController.cs",
               "DocumentMoniker": "C:\\Users\\Gamers\\Documents\\GitHub\\Potencijali-Zavrsnog-Rada\\ZavrsniTrgovina\\ZavrsniTrgovina\\Controllers\\ProizvodController.cs",
               "RelativeDocumentMoniker": "ZavrsniTrgovina\\Controllers\\ProizvodController.cs",
