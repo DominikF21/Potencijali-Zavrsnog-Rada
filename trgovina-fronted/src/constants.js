@@ -11,5 +11,5 @@ export const RoutesNames = {
 
 export const App = {
     DEV: false,
-    URL: 'https://dominikf21-001-site1.ftempurl.com'
+    URL: 'https://dominikf22-001-site1.jtempurl.com'
 };
